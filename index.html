@@ -8,17 +8,24 @@
 </head>
 <body>
     <header id="navigation-bar">
-        <h3 id="logo">Disini logo</h3>
+        <div class="logo">
+            <img src="https://cdn.icon-icons.com/icons2/715/PNG/512/thermometer-4_icon-icons.com_62241.png" alt="Logo Temperatur Suhu">
+        </div>
         <nav id="navigation">
             <a href="">Lihat Hasil</a>
             <a href="">Lihat Rumus</a>
 
         </nav>
     </header>
-    <div class="input-section">
-        <label for="input-field">Celicius</label>
-        <input type="number" class="input-field">
+    <div class="converter">
+        <h1>Temperature Converter</h1>
+        <input type="number" id="celcius" placeholder="Celsius" name="celcius">
+        <input type="number" id="farenheit" placeholder="Fahrenheit" name="fahrenheit">
+        <button class="my-button" onclick="konversiSuhu()">Konversi</button>
+        <button class="my-button" onclick="clearFields()">Clear</button>
+        <div id="hasil"></div>
     </div>
-    <button class="my-button">konversi</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
